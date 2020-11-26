@@ -6,8 +6,8 @@ public  class PasswordAuthenticator extends Authenticator {
 
     protected PasswordAuthentication getPasswordAuthentication() {
 
-        String username = "eqzppx";
-        String password = "yjfqbf";
+        String username = "USER";
+        String password = "PW";
         return new PasswordAuthentication(username, password.toCharArray());
 
     }
