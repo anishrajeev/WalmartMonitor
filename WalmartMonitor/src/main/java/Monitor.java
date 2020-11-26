@@ -15,7 +15,7 @@ import java.util.List;
 public class Monitor {
 
     public static void main(String[] args) throws LoginException, InterruptedException {
-        JDA jda = JDABuilder.createDefault("NzgxMzkxMDcwMDY3NDI1Mjkw.X789JA.qZP-isEU580NOM_gwbW7RLRpOP0").build();
+        JDA jda = JDABuilder.createDefault("REPLACE WITH DISCORD BOT TOKEN").build();
         jda.awaitReady();
         System.out.println("WALMART MONITOR");
         EmbedBuilder eb = new EmbedBuilder();
