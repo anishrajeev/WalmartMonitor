@@ -90,7 +90,8 @@ class m extends Thread{
         while(true){
             try{
                 java.net.Authenticator.setDefault (new PasswordAuthenticator());
-                Proxy p = new Proxy(Proxy.Type.HTTP, InetSocketAddress.createUnresolved("104.129.241.141", 17102));
+                Proxy p = new Proxy(Proxy.Type.HTTP, InetSocketAddress.createUnresolved("HOST", 80));
+                //replace 80 with your own proxy port
                 Document doc = Jsoup.connect(url).timeout(0).get();
                 boolean found = false;
                 Elements e = doc.getElementsByTag("h3");
